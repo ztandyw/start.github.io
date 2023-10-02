@@ -2,22 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Lost in the Love!</title>
+    <title>Lost In The Stars</title>
     <style>
-      body {
-        background-color: #F5F5FF;
+      :root {
+        font-size: 20px;
+      }
+   body {
+        background: 
+          repeating-linear-gradient(0deg, #FFFFFF, #FFFFFF 25px, #64A88C 25px, #64A88C 50px);/* 马赛克方格背景 */
+        background-size: 50px 50px; /* 方格大小 */
+        animation: backgroundFlow 8s infinite alternate; /* 背景流动动画 */
+      }
+      body::before {
+        content: ""; /* 添加伪元素内容 */
+        position: absolute; /* 设置绝对定位 */
+        top: 0;
+        left: 0;
+        width: 100%; /* 占满整个屏幕宽度 */
+        height: 100%; /* 占满整个屏幕高度 */
+        background: linear-gradient(90deg, #FFFFFF, #FFFFFF 25px, #64A88C 25px, #64A88C 50px); /* 垂直方格 */
+        background-size: 50px 50px; /* 方格大小 */
+        opacity: 0.5; /* 降低伪元素的透明度 */
+        z-index: 1;
+      }
+      @keyframes backgroundFlow {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 0% 100%;
+        }
       }
       
       h1 {
         font-family: Bradley Hand ITC;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: bold;
-        color: #FF1493;
+        color: #ffd700;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 1;
+        z-index: 4;
       }
       
       .background-image {
@@ -25,13 +51,78 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: 2;
         width: 50%;
       }
+      .background-image-2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        width: 50%;
+      }
+     .red-text {
+            background: linear-gradient(0deg, #FF0000, transparent, #FF0000), 
+                        linear-gradient(45deg, #FF0000, transparent, #FFFFFF),
+                        linear-gradient(65deg, #FF0000, transparent, #FFFFFF); /* 渐变背景 */
+            -webkit-background-clip: text; /* 使用文字作为背景剪切 */
+            color: transparent; /* 隐藏文字颜色 */
+            animation: blood 6s infinite alternate; /* 动画效果 */
+        }
+
+        @keyframes blood {
+            0% {
+                transform: translateX(0px);
+            }
+            50% {
+                transform: translateX(5px);
+            100% {
+                transform: translateX(0px); /* 在X轴上平移文字 */
+            }
+        }
+      .gre-text {
+            background: linear-gradient(0deg, ##64A88C, transparent, ##64A88C), 
+                        linear-gradient(45deg, ##64A88C, transparent, #FFFFFF),
+                        linear-gradient(65deg, ##64A88C, transparent, #FFFFFF); /* 渐变背景 */
+            -webkit-background-clip: text; /* 使用文字作为背景剪切 */
+            color: transparent; /* 隐藏文字颜色 */
+            animation: blood 6s infinite alternate; /* 动画效果 */
+        }
+        @keyframes blood {
+            0% {
+                transform: translateX(0px);
+            }
+            50% {
+                transform: translateX(5px);
+            100% {
+                transform: translateX(0px); /* 在X轴上平移文字 */
+            }
+        }
     </style>
   </head>
   <body>
-    <h1>消失的阿雯</h1>
-    <img src="https://celingo.github.io/pic.io/66.png" alt="background" class="background-image">
+    <h1>&nbsp&nbsp&nbsp唯一：
+      <br><br> 
+      <span class="red-text">&nbsp&nbsp&nbsp你真的懂唯一的定义 </span>
+      <span class="red-text">&nbsp&nbsp&nbsp并不简单如呼吸 </span>
+      <span class="red-text">&nbsp&nbsp&nbsp你真的希望你&nbsp能理清 </span>
+      <span class="red-text">&nbsp&nbsp&nbsp若没交心 </span>
+      <span class="red-text">&nbsp&nbsp&nbsp怎么说明 </span>
+      <span class="red-text">&nbsp&nbsp&nbsp我真的&nbsp爱你 </span>
+      <span class="red-text">&nbsp&nbsp&nbsp句句不轻易 </span>
+      <span class="red-text">&nbsp&nbsp&nbsp眼神中飘移 </span>
+      <span class="red-text">&nbsp&nbsp&nbsp总是在&nbsp关键时刻 </span>
+      <span class="red-text">&nbsp&nbsp&nbsp清楚洞悉 </span>
+      <span class="red-text">&nbsp&nbsp&nbsp你的不坚定 </span>
+      <span class="red-text">&nbsp&nbsp&nbsp配合我颠沛流离 </span>
+      <span class="red-text">&nbsp&nbsp&nbsp死去中清醒 </span>
+      <span class="red-text">&nbsp&nbsp&nbsp明白你背着我聪明 </span>
+      <span class="red-text"><br><br>&nbsp&nbsp&nbspI wish you happiness </span>
+      <span class="red-text">&nbsp&nbsp&nbsp阿雯</span>
+    </h1>
+    
+    <img src="https://ztandyw.github.io/pic.io/img06.jpg" alt="background" class="background-image">
+    <img src="https://celingo.github.io/pic.io/66.png" alt="background" class="background-image-2">
   </body>
 </html>
