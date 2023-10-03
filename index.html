@@ -80,17 +80,6 @@
             animation: blood 6s infinite alternate; /* 动画效果 */
             z-index: -1;
         }
-
-        @keyframes blood {
-            0% {
-                transform: translateX(0px);
-            }
-            50% {
-                transform: translateX(5px);
-            100% {
-                transform: translateX(0px); /* 在X轴上平移文字 */
-            }
-        }
       .green-text {
             background: linear-gradient(0deg, ##64A88C, transparent, ##64A88C), 
                         linear-gradient(45deg, ##64A88C, transparent, #FFFFFF),
@@ -110,6 +99,7 @@
                 transform: translateX(0px); /* 在X轴上平移文字 */
             }
         }
+
     </style>
   </head>
   <body>
