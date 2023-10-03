@@ -12,7 +12,7 @@
           repeating-linear-gradient(0deg, #FFFFFF, #FFFFFF 25px, #64A88C 25px, #64A88C 50px);/* 马赛克方格背景 */
         background-size: 50px 50px; /* 方格大小 */
         animation: backgroundFlow 8s infinite alternate; /* 背景流动动画 */
-        z-index: -2;
+        z-index: -5;
       }
       body::before {
         content: ""; /* 添加伪元素内容 */
@@ -24,7 +24,7 @@
         background: linear-gradient(90deg, #FFFFFF, #FFFFFF 25px, #64A88C 25px, #64A88C 50px); /* 垂直方格 */
         background-size: 50px 50px; /* 方格大小 */
         opacity: 0.5; /* 降低伪元素的透明度 */
-        z-index: -1;
+        z-index: -4;
       }
       @keyframes backgroundFlow {
         0% {
@@ -44,20 +44,21 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 4;
+        z-index: -1;
       }
       audio {
         position: absolute;
         bottom: 5%;
         left: 50%;
         transform: translatex(-50%);
+        opacity: 0.5;
       }
       .background-image {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 2;
+        z-index: -3;
         width: 50%;
       }
       .background-image-2 {
@@ -65,7 +66,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 3;
+        z-index: -2;
         width: 50%;
       }
      .red-text {
@@ -75,6 +76,7 @@
             -webkit-background-clip: text; /* 使用文字作为背景剪切 */
             color: transparent; /* 隐藏文字颜色 */
             animation: blood 6s infinite alternate; /* 动画效果 */
+            z-index: -1;
         }
 
         @keyframes blood {
@@ -94,6 +96,7 @@
             -webkit-background-clip: text; /* 使用文字作为背景剪切 */
             color: transparent; /* 隐藏文字颜色 */
             animation: blood 6s infinite alternate; /* 动画效果 */
+            z-index: -1;
         }
         @keyframes blood {
             0% {
