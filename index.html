@@ -44,7 +44,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: 1;
       }
       audio {
         position: absolute;
@@ -79,7 +79,7 @@
             -webkit-background-clip: text; /* 使用文字作为背景剪切 */
             color: transparent; /* 隐藏文字颜色 */
             animation: blood 6s infinite alternate; /* 动画效果 */
-            z-index: -1;
+            z-index: 1;
         }
       .green-text {
             background: linear-gradient(0deg, ##64A88C, transparent, ##64A88C), 
@@ -87,7 +87,7 @@
                         linear-gradient(65deg, ##64A88C, transparent, #FFFFFF); /* 渐变背景 */
             -webkit-background-clip: text; /* 使用文字作为背景剪切 */
             animation: blood 6s infinite alternate; /* 动画效果 */
-            z-index: -1;
+            z-index: 1;
         }
         @keyframes blood {
             0% {
